@@ -55,7 +55,7 @@ class GameViewController: UIViewController {
     }
     
     func setupNodes() {
-        ballNode = scnScene.rootNode.childNode(withName: "ball", recursively: true)!
+        ballNode = scnScene.rootNode.childNode(withName: "obj_ball", recursively: true)!
         ballNode.physicsBody?.contactTestBitMask = CollisionCategoryPillar | CollisionCategoryCrate | CollisionCategoryPearl
         
         cameraNode = scnScene.rootNode.childNode(withName: "camera", recursively: true)!
